@@ -1,13 +1,16 @@
-<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
 <div>
-  <div class="relative min-h-screen bg-cover" style="background-image: url('assets/MicrosoftTeams-image.png');">
+  <div class="relative min-h-screen bg-cover" style="background-image: url('assets/MicrosoftTeams-image.png'); filter: brightness(110%);">
     <nav class="absolute top-0 left-0 right-0 p-6 flex justify-between items-center bg-transparent">
-      <div class="text-2xl md:text-3xl hover-portfolio" data-hover="Portfolio">Diogo Sousa</div>
+
+      <div class="text-2xl md:text-2xl hover-portfolio relative" data-hover="@Portfolio">
+        Diogo Sousa
+        <div class="absolute -bottom-1 w-full h-0.5 bg-white transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></div>
+      </div>
       <ul class="flex space-x-6">
-        <li><a routerLink="/projects" routerLinkActive="active" ariaCurrentWhenActive="page" class="text-white hover:text-gray-300">Work</a></li>
-        <li><a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page" class="text-white hover:text-gray-300">About</a></li>
-        <li><a routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page" class="text-white hover:text-gray-300">Contact</a></li>
+        <li><a routerLink="/projects" routerLinkActive="active" ariaCurrentWhenActive="page" class="text-white hover:text-gray-300 transition-all duration-300 transform hover:scale-110">Work</a></li>
+        <li><a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page" class="text-white hover:text-gray-300 transition-all duration-300 transform hover:scale-110">About</a></li>
+        <li><a routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page" class="text-white hover:text-gray-300 transition-all duration-300 transform hover:scale-110">Contact</a></li>
       </ul>
     </nav>
     <div class="absolute bottom-0 left-0 right-0 flex justify-center overflow-hidden">
@@ -16,10 +19,14 @@
       </div>
     </div>
     <div class="absolute left-0 top-1/2 transform -translate-y-1/2 text-white text-center w-1/2">
-      <p class="text-xl md:text-2xl">Software Developer</p>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 absolute left-0 top-1/2 transform -translate-y-1/2 text-white text-center w-1/2 hover:animate-ping ">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 4.5 15 15m0 0V8.25m0 11.25H8.25" />
+      </svg>
+      <p class="text-xl md:text-4xl">Software Developer</p>
     </div>
   </div>
 </div>
+
 
 
 

@@ -3,6 +3,7 @@ import { Observable } from 'rxjs';
 import { ProjectService } from '../project.service';
 import { Project } from '../project';
 import {NgForOf,AsyncPipe} from "@angular/common";
+import {RouterOutlet} from "@angular/router";
 
 
 @Component({
@@ -10,7 +11,8 @@ import {NgForOf,AsyncPipe} from "@angular/common";
   templateUrl: './project-list.component.html',
   standalone: true,
   imports: [
-    NgForOf
+    NgForOf,
+    RouterOutlet
   ],
   styleUrls: ['./project-list.component.css']
 })
