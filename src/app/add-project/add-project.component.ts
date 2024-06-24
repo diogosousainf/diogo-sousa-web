@@ -1,15 +1,17 @@
 import { Component } from '@angular/core';
 import { ProjectService } from '../project.service';
-import { Project } from '../project';  // Importando a interface Project
+import { Project } from '../project';
 import { Router } from '@angular/router';
 import {FormsModule} from "@angular/forms";
+import {NgIf} from "@angular/common";
 
 @Component({
   selector: 'app-add-project',
   templateUrl: './add-project.component.html',
   standalone: true,
   imports: [
-    FormsModule
+    FormsModule,
+    NgIf
   ],
   styleUrls: ['./add-project.component.css']
 })
@@ -18,12 +20,14 @@ export class AddProjectComponent {
   description = '';
   image = '';
   link = '';
+  successMessage = '';
+
 
   constructor(private projectService: ProjectService, private router: Router) {}
 
   addProject(): void {
     const newProject: Project = {
-      id: 0, // ID pode ser 0 ou pode ser gerado pela API
+      id: 0,
       name: this.name,
       description: this.description,
       image: this.image,
@@ -32,7 +36,20 @@ export class AddProjectComponent {
       updated_at: ''
     };
     this.projectService.addProject(newProject).subscribe(() => {
-      this.router.navigate(['/']);
+      this.successMessage = 'Project added successfully!';
+      this.clearFields();
+      setTimeout(() => {
+        this.successMessage = '';
+      }, 3000);
     });
   }
+
+  clearFields(): void {
+    this.name = '';
+    this.description = '';
+    this.image = '';
+    this.link = '';
+  }
+
+
 }

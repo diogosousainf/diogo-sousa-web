@@ -1,8 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* Additional global styles */
+/* welcome.component.css */
 html, body {
   margin: 0;
   padding: 0;
@@ -15,3 +11,4 @@ html, body {
 body {
   font-family: 'neue-montreal', sans-serif;
 }
+
