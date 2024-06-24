@@ -6,12 +6,13 @@ import {HttpClientModule} from "@angular/common/http";
 import {Project} from "./project";
 import {ProjectService} from "./project.service";
 import {WelcomeComponent} from "./welcome/welcome.component";
+import {AboutComponent} from "./about/about.component";
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ProjectListComponent, AddProjectComponent, HttpClientModule, RouterLink, WelcomeComponent],
+  imports: [RouterOutlet, ProjectListComponent, AddProjectComponent, HttpClientModule, RouterLink, WelcomeComponent, AboutComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

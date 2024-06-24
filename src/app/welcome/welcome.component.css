@@ -1,14 +1,71 @@
-/* welcome.component.css */
+/* Estilos Globais */
 html, body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
   font-family: 'neue-montreal', sans-serif;
-
+  position: relative;
 }
 
 body {
   font-family: 'neue-montreal', sans-serif;
+}
+
+/* Animação do Texto */
+@keyframes text-move {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Classe para o Texto em Movimento */
+.animate-text-move {
+  white-space: nowrap;
+  animation: text-move 20s linear infinite;
+  font-size: 15rem; /* Tamanho padrão para telas menores */
+  font-family: 'neue-montreal', sans-serif;
+}
+
+@media (min-width: 768px) {
+  .animate-text-move {
+    font-size: 15rem; /* Tamanho para telas maiores */
+  }
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+/* Animação de Hover para o Nome no Canto Superior Esquerdo */
+.hover-portfolio {
+  position: relative;
+  transition: all 0.6s ease-in-out;
+  cursor: pointer;
+  color: white; /* Cor do texto inicial */
+}
+
+.hover-portfolio::after {
+  content: attr(data-hover);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: transparent;
+  transition: color 0.5s ease-in-out;
+  text-align: center;
+  line-height: 1;
+}
+
+.hover-portfolio:hover::after {
+  color: #f4f4ec;
+}
+
+.hover-portfolio:hover {
+  color: transparent;
 }
 
