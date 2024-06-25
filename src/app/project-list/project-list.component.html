@@ -1,11 +1,32 @@
 <div class="container">
-  <h2>Project List</h2>
-  <ul class="list-group">
-    <li class="list-group-item" *ngFor="let project of projects">
-      <h3>{{ project.name }}</h3>
-      <p>{{ project.description }}</p>
-      <img [src]="project.image" alt="project.name" class="img-thumbnail">
-      <p>Github repository : <a [href]="project.link" target="_blank">{{ project.link }}</a></p>
-    </li>
-  </ul>
+  <p class="text-xl md:text-9xl mb-12">Creating next level
+    digital products
+  </p>
+  <mat-table class="mat-elevation-z8" [dataSource]="projects">
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+      <mat-header-cell *matHeaderCellDef>Name</mat-header-cell>
+      <mat-cell *matCellDef="let project">{{ project.name }}</mat-cell>
+    </ng-container>
+
+    <!-- Description Column -->
+    <ng-container matColumnDef="description">
+      <mat-header-cell *matHeaderCellDef>Description</mat-header-cell>
+      <mat-cell *matCellDef="let project">{{ project.description }}</mat-cell>
+    </ng-container>
+
+    <!-- GitHub Repository Column -->
+    <ng-container matColumnDef="link">
+      <mat-header-cell *matHeaderCellDef>GitHub Repository</mat-header-cell>
+      <mat-cell *matCellDef="let project">
+        <a [href]="project.link" target="_blank">GitHub Link</a>
+      </mat-cell>
+    </ng-container>
+
+    <!-- Zoom Effect -->
+    <mat-row *matRowDef="let project; columns: displayedColumns"
+             (mouseover)="zoomIn(project)" (mouseleave)="zoomOut(project)"
+             [ngClass]="{ 'zoomed': project.zoomed }">
+    </mat-row>
+  </mat-table>
 </div>

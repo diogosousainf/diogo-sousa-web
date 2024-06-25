@@ -1,0 +1,26 @@
+.container {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 350px;
+}
+
+.mat-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.mat-header-cell, .mat-cell {
+  padding: 12px;
+}
+
+.header-row {
+}
+
+.table-row {
+  transition: transform 0.3s ease;
+}
+
+.table-row.zoomed {
+  transform: scale(1.1);
+}

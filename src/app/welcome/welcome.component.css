@@ -78,6 +78,10 @@ nav ul li a::before {
 nav ul li a:hover::before {
   transform: scaleX(1);
 }
+.nav-link-active {
+  font-weight: bold;
+  color: #0095ff; /* cor desejada para o link ativo */
+}
 
 p {
   position: relative;
