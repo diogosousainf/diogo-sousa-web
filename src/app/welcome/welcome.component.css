@@ -1,7 +1,5 @@
 /* Estilos Globais */
 html, body {
-  margin: 0;
-  padding: 0;
   width: 100%;
   height: 100%;
   font-family: 'neue-montreal', sans-serif;
@@ -22,22 +20,6 @@ body {
   }
 }
 
-/* Classe para o Texto em Movimento */
-.animate-text-move {
-  white-space: nowrap;
-  animation: text-move 20s linear infinite;
-  font-size: 15rem; /* Tamanho padrão para telas menores */
-  font-family: 'neue-montreal', sans-serif;
-}
-
-@media (min-width: 768px) {
-  .animate-text-move {
-    font-size: 15rem; /* Tamanho para telas maiores */
-    font-family: 'neue-montreal', sans-serif;
-
-  }
-}
-
 .min-h-screen {
   min-height: 100vh;
 }
@@ -49,7 +31,6 @@ body {
   cursor: pointer;
   color: white; /* Cor do texto inicial */
   font-family: 'neue-montreal', sans-serif;
-
 }
 
 .hover-portfolio::after {
@@ -64,7 +45,6 @@ body {
   text-align: center;
   line-height: 1;
   font-family: 'neue-montreal', sans-serif;
-
 }
 
 .hover-portfolio:hover::after {
@@ -74,7 +54,6 @@ body {
 .hover-portfolio:hover {
   color: transparent;
 }
-
 
 /* Animação de hover dos links da navegação */
 nav ul li a {
@@ -97,5 +76,28 @@ nav ul li a::before {
 }
 
 nav ul li a:hover::before {
+  transform: scaleX(1);
+}
+
+p {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
+p::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+p:hover::before {
   transform: scaleX(1);
 }
