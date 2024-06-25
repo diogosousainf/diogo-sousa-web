@@ -7,4 +7,5 @@ export interface Project {
   created_at: string;
   updated_at: string;
   zoomed?: boolean;
+  showImage?: boolean;
 }

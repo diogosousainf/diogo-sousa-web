@@ -10,7 +10,6 @@ body {
   font-family: 'neue-montreal', sans-serif;
 }
 
-/* Animação do Texto */
 @keyframes text-move {
   0% {
     transform: translateX(-100%);
@@ -24,12 +23,11 @@ body {
   min-height: 100vh;
 }
 
-/* Animação de Hover para o Nome no Canto Superior Esquerdo */
 .hover-portfolio {
   position: relative;
   transition: all 0.6s ease-in-out;
   cursor: pointer;
-  color: white; /* Cor do texto inicial */
+  color: white;
   font-family: 'neue-montreal', sans-serif;
 }
 

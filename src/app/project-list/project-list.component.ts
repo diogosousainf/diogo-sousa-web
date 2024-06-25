@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { ProjectService } from '../project.service';
 import { Project } from '../project';
-import {NgForOf, AsyncPipe, NgClass} from "@angular/common";
+import {NgForOf, AsyncPipe, NgClass, NgIf} from "@angular/common";
 import {RouterOutlet} from "@angular/router";
 import {
   MatCell,
@@ -30,13 +30,15 @@ import {
     MatColumnDef,
     MatHeaderCellDef,
     MatCellDef,
-    MatRowDef
+    MatRowDef,
+    NgIf
   ],
   styleUrls: ['./project-list.component.css']
 })
 export class ProjectListComponent implements OnInit {
   projects: Project[] = [];
-  displayedColumns: string[] = ['name', 'description', 'link'];
+  displayedColumns: string[] = ['name', 'link'];
+  selectedProject: Project | null = null;
 
 
   constructor(private projectService: ProjectService) {}
@@ -47,11 +49,12 @@ export class ProjectListComponent implements OnInit {
     });
   }
 
-  zoomIn(project: Project): void {
-    project.zoomed = true;
+  openModal(project: Project): void {
+    this.selectedProject = project;
   }
 
-  zoomOut(project: Project): void {
-    project.zoomed = false;
+  closeModal(): void {
+    this.selectedProject = null;
   }
 }
+
