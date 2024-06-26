@@ -1,17 +1,28 @@
+body{
+  margin-top: 50px;
+}
 .container {
   width: 100%;
   padding: 20px;
   text-align: center;
+}
 
+.container-lg {
+  max-width: 800px;
 }
 
 .mat-table {
+  max-width:50%;
   overflow-x: auto;
 }
 
-.mat-header-cell, .mat-cell {
+.mat-header-cell,
+.mat-cell {
   padding: 12px;
+  min-width: 50px; /* Define a largura mínima das células */
+  box-sizing: border-box; /* Garante que o padding não aumente a largura das células */
 }
+
 
 .mat-cell {
   cursor: pointer;
@@ -23,10 +34,8 @@
 }
 .project-name {
   cursor: pointer;
+  font-size: x-large;
   transition: background-color 0.3s ease;
-  &:hover {
-
-  }
 }
 .modal {
   display: flex;
@@ -48,8 +57,8 @@
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 90%; /* Aumentar o tamanho do modal */
-  max-width: 800px; /* Aumentar o tamanho máximo do modal */
+  width: 120%; /* Aumentar o tamanho do modal */
+  max-width: 1500px; /* Aumentar o tamanho máximo do modal */
   animation: slideIn 0.5s;
 }
 
@@ -77,7 +86,8 @@
   from { transform: translateY(-50px); }
   to { transform: translateY(0); }
 }
-/* Adiciona estilo ao ícone do GitHub */
+
+/* ícone do GitHub */
 a svg {
   fill: currentColor;
   vertical-align: middle;

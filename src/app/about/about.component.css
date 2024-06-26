@@ -1,6 +1,5 @@
 body {
   position: relative; /* Mantido para melhorar o fluxo do layout */
-  margin-top: 100px;
   margin-bottom: 500px;
 }
 
@@ -102,4 +101,64 @@ h2 {
 
 .contacts-media {
   margin-top: 20px; /* Espaçamento superior para separar dos ícones sociais */
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.download-cv {
+  text-align: center;
+  margin-bottom: 10px;
+
+}
+
+.download-cv a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0077b5;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.download-cv a:hover {
+  background-color: #005580;
+}
+img {
+  border-radius: 30%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #252424;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+@media (max-width: 768px) {
+  img {
+    width: 10rem; /* Adjust size for smaller screens */
+    height: 10rem; /* Adjust size for smaller screens */
+  }
+}
+@media (min-width: 769px) {
+  img {
+    width: 15rem; /* Adjust size for medium screens */
+    height: 15rem; /* Adjust size for medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  img {
+    width: 20rem; /* Adjust size for larger screens */
+    height: 20rem; /* Adjust size for larger screens */
+  }
 }
