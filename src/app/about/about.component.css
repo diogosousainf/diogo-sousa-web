@@ -1,8 +1,3 @@
-body {
-  position: relative; /* Mantido para melhorar o fluxo do layout */
-  margin-bottom: 10px;
-}
-
 .about-container {
   display: flex;
   flex-direction: column;

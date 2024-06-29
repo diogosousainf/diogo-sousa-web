@@ -172,27 +172,3 @@ a svg:hover {
     width: 95%;
   }
 }
-/* CSS adicional */
-.animate .container {
-  animation: fadeIn 1s ease-in-out;
-}
-
-.animate .container-lg {
-  animation: slideIn 1s ease-in-out;
-}
-
-.animate .project-name {
-  animation: bounceIn 1s ease-in-out;
-}
-
-.animate .modal {
-  animation: fadeIn 0.5s;
-}
-
-.animate .modal-content {
-  animation: slideIn 0.5s;
-}
-
-.animate .close {
-  animation: rotateIn 0.5s;
-}
