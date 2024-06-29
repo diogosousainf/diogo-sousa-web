@@ -1,28 +1,32 @@
-body{
+/* CSS for app-project-list component */
+body {
   margin-top: 50px;
 }
+
 .container {
   width: 100%;
   padding: 20px;
   text-align: center;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .container-lg {
   max-width: 800px;
+  animation: slideIn 1s ease-in-out;
 }
 
 .mat-table {
-  max-width:50%;
+  max-width: 50%;
   overflow-x: auto;
+  margin: 0 auto;
 }
 
 .mat-header-cell,
 .mat-cell {
   padding: 12px;
-  min-width: 50px; /* Define a largura mínima das células */
-  box-sizing: border-box; /* Garante que o padding não aumente a largura das células */
+  min-width: 50px;
+  box-sizing: border-box;
 }
-
 
 .mat-cell {
   cursor: pointer;
@@ -31,12 +35,16 @@ body{
 
 .mat-cell:hover {
   background-color: #f0f0f0;
+  animation: pulse 0.5s infinite;
 }
+
 .project-name {
   cursor: pointer;
   font-size: x-large;
   transition: background-color 0.3s ease;
+  animation: bounceIn 1s ease-in-out;
 }
+
 .modal {
   display: flex;
   align-items: center;
@@ -57,8 +65,8 @@ body{
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 120%; /* Aumentar o tamanho do modal */
-  max-width: 1500px; /* Aumentar o tamanho máximo do modal */
+  width: 90%;
+  max-width: 1300px;
   animation: slideIn 0.5s;
 }
 
@@ -68,6 +76,7 @@ body{
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
+  animation: rotateIn 0.5s;
 }
 
 .close:hover,
@@ -87,8 +96,103 @@ body{
   to { transform: translateY(0); }
 }
 
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+@keyframes bounceIn {
+  from, 20%, 40%, 60%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes rotateIn {
+  from {
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
 /* ícone do GitHub */
 a svg {
   fill: currentColor;
   vertical-align: middle;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+a svg:hover {
+  transform: scale(1.2);
+  color: #0077b5;
+}
+
+@media (max-width: 768px) {
+  .container-lg {
+    max-width: 100%;
+  }
+
+  .mat-table {
+    max-width: 90%;
+  }
+
+  .modal-content {
+    width: 95%;
+  }
+}
+/* CSS adicional */
+.animate .container {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.animate .container-lg {
+  animation: slideIn 1s ease-in-out;
+}
+
+.animate .project-name {
+  animation: bounceIn 1s ease-in-out;
+}
+
+.animate .modal {
+  animation: fadeIn 0.5s;
+}
+
+.animate .modal-content {
+  animation: slideIn 0.5s;
+}
+
+.animate .close {
+  animation: rotateIn 0.5s;
 }

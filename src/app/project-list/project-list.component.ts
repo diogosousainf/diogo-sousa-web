@@ -46,6 +46,7 @@ export class ProjectListComponent implements OnInit {
   ngOnInit(): void {
     this.projectService.getProjects().subscribe(data => {
       this.projects = data;
+
     });
   }
 
@@ -56,5 +57,8 @@ export class ProjectListComponent implements OnInit {
   closeModal(): void {
     this.selectedProject = null;
   }
+
+
+
 }
 

@@ -76,7 +76,6 @@ nav ul li a:hover::before {
   transform: scaleX(1);
 }
 
-
 p {
   position: relative;
   transition: all 0.3s ease-in-out;
@@ -100,21 +99,19 @@ p:hover::before {
   transform: scaleX(1);
 }
 
-
-
 img {
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #252424;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-
 }
+
 img:hover {
   transform: scale(1.1) rotate(360deg);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-
 }
+
 @media (max-width: 768px) {
   img {
     width: 10rem; /* Adjust size for smaller screens */
@@ -133,4 +130,15 @@ img:hover {
     width: 20rem; /* Adjust size for larger screens */
     height: 20rem; /* Adjust size for larger screens */
   }
+}
+
+.scrollreveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-in-out;
+}
+
+.scrollreveal.show {
+  opacity: 1;
+  transform: translateY(0);
 }
