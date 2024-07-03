@@ -27,7 +27,7 @@ export class AddProjectComponent {
 
   addProject(): void {
     const newProject: Project = {
-      id: 0,
+      id: this.generateUniqueId(),
       name: this.name,
       description: this.description,
       image: this.image,
@@ -50,6 +50,8 @@ export class AddProjectComponent {
     this.image = '';
     this.link = '';
   }
-
+  generateUniqueId(): number {
+    return Math.floor(Math.random() * 1000000);
+  }
 
 }

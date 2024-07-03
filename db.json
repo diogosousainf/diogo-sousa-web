@@ -1,0 +1,121 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "CryptoMon (In production)",
+      "description": "CryptoMon Private project",
+      "image": "https://ideogram.ai/assets/image/lossless/response/0EBhXQxKSLqwdBRNY4893A",
+      "link": "https://github.com/diogosousainf/CryptoMon",
+      "created_at": "2023-07-02T00:00:00Z",
+      "updated_at": "2024-07-02T00:00:00Z"
+    },
+    {
+      "id": 2,
+      "name": "diogo-sousa-web",
+      "description": "Is a personal website",
+      "image": null,
+      "link": "https://github.com/diogosousainf/diogo-sousa-web",
+      "created_at": "2023-07-02T00:00:00Z",
+      "updated_at": "2024-06-29T00:00:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Academic web-store-angular ",
+      "description": "Angular project.",
+      "image": null,
+      "link": "https://github.com/diogosousainf/web-store-angular",
+      "created_at": "2023-07-02T00:00:00Z",
+      "updated_at": "2024-06-29T00:00:00Z"
+    },
+    {
+      "id": 4,
+      "name": "Academic Portfolio ",
+      "description": "My first Portfolio",
+      "image": null,
+      "link": "https://diogosousainf.github.io/diogosousaPortfolio.github.io/",
+      "created_at": "2023-07-02T00:00:00Z",
+      "updated_at": "2024-06-26T00:00:00Z"
+    },
+    {
+      "id": 5,
+      "name": "Blog-Trips-AspNet Public",
+      "description": "C# project.",
+      "image": null,
+      "link": "https://github.com/diogosousainf/Blog-Trips-AspNet",
+      "created_at": "2023-07-02T00:00:00Z",
+      "updated_at": "2024-06-19T00:00:00Z"
+    },
+    {
+      "id": 7,
+      "name": "Infinite-arcade ",
+      "description": "PHP project.",
+      "image": null,
+      "link": null,
+      "created_at": "2023-04-27T00:00:00Z",
+      "updated_at": "2023-04-27T00:00:00Z"
+    },
+    {
+      "id": 8,
+      "name": "C# Academy-Manage",
+      "description": "ADOSMELHORES Asset Management System Description This C# program was developed to meet the asset management needs of ADOSMELHORES, a training company. The application provides functionalities to manage information about employees, directors, secretaries, trainers, and coordinators. The program utilizes classes and inheritance to organize and perform the specified tasks.",
+      "image": null,
+      "link": "https://github.com/diogosousainf/Csharp-Academy-Manage",
+      "created_at": "2023-04-19T00:00:00Z",
+      "updated_at": "2023-04-19T00:00:00Z"
+    },
+    {
+      "id": 10,
+      "name": " Academic web-app-stock-management ",
+      "description": "HTML project.",
+      "image": null,
+      "link": "https://github.com/diogosousainf/web-app-stock-management-javascript",
+      "created_at": "2023-04-06T00:00:00Z",
+      "updated_at": "2023-04-06T00:00:00Z"
+    },
+    {
+      "id": 12,
+      "name": "Crypto-app-React",
+      "description": "JavaScript project.",
+      "image": null,
+      "link": "https://github.com/diogosousainf/crypto-app-React",
+      "created_at": "2023-02-12T00:00:00Z",
+      "updated_at": "2023-02-12T00:00:00Z"
+    },
+    {
+      "id": 14,
+      "name": "Calculator-c-forms",
+      "description": "C# project.",
+      "image": null,
+      "link": "https://github.com/diogosousainf/calculator-c-forms",
+      "created_at": "2023-02-05T00:00:00Z",
+      "updated_at": "2023-02-05T00:00:00Z"
+    },
+    {
+      "id": 15,
+      "name": "to-do-list-React",
+      "description": "JavaScript project.",
+      "image": null,
+      "link": "https://github.com/diogosousainf/to-do-list-React",
+      "created_at": "2023-02-04T00:00:00Z",
+      "updated_at": "2023-02-04T00:00:00Z"
+    },
+    {
+      "id": 16,
+      "name": "Academic C# Rent-a-car",
+      "description": "C# Console Project.",
+      "image": null,
+      "link": "https://github.com/diogosousainf/Rent-a-car-project",
+      "created_at": "2023-01-25T00:00:00Z",
+      "updated_at": "2023-01-25T00:00:00Z"
+    },
+    {
+      "id": 18,
+      "name": "Academic RestaurantConsole ",
+      "description": "Restaurant C++ console .",
+      "image": null,
+      "link": "https://github.com/diogosousainf/RestaurantConsole",
+      "created_at": "2023-11-23T00:00:00Z",
+      "updated_at": "2023-11-23T00:00:00Z"
+    }
+  ]
+}

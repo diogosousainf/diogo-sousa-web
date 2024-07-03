@@ -8,18 +8,20 @@ import { Project } from './project';
   providedIn: 'root'
 })
 export class ProjectService {
-  private apiUrl = 'http://127.0.0.1:8000/api/projects';
+  private apiURL = 'http://localhost:3000/projects'; // Atualizado para JSON Server
   private httpOptions = {
-    headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+    headers: new HttpHeaders({
+      'Content-Type': 'application/json'
+    })
   };
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   getProjects(): Observable<Project[]> {
-    return this.http.get<Project[]>(this.apiUrl);
+    return this.http.get<Project[]>(this.apiURL);
   }
 
   addProject(project: Project): Observable<Project> {
-    return this.http.post<Project>(this.apiUrl, project, this.httpOptions);
+    return this.http.post<Project>(this.apiURL, project, this.httpOptions);
   }
 }
