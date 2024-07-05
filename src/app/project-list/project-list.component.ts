@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { ProjectService } from '../project.service';
 import { Project } from '../project';
-import {NgForOf, AsyncPipe, NgClass, NgIf} from "@angular/common";
+import {NgForOf, AsyncPipe, NgClass, NgIf, SlicePipe} from "@angular/common";
 import {RouterOutlet} from "@angular/router";
 
 
@@ -34,7 +34,8 @@ import {
     MatHeaderCellDef,
     MatCellDef,
     MatRowDef,
-    NgIf
+    NgIf,
+    SlicePipe
   ],
   styleUrls: ['./project-list.component.css']
 })

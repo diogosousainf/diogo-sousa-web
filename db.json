@@ -12,8 +12,8 @@
     {
       "id": 2,
       "name": "diogo-sousa-web",
-      "description": "Is a personal website",
-      "image": null,
+      "description": "Is a personal website i build using Angular and JSON Server, is the project you are seeing right now.",
+      "image": "https://i.imgur.com/p1JvWHa.png",
       "link": "https://github.com/diogosousainf/diogo-sousa-web",
       "created_at": "2023-07-02T00:00:00Z",
       "updated_at": "2024-06-29T00:00:00Z"
@@ -22,7 +22,7 @@
       "id": 3,
       "name": "Academic web-store-angular ",
       "description": "Angular project.",
-      "image": null,
+      "image": "https://i.imgur.com/Rks35PL.png",
       "link": "https://github.com/diogosousainf/web-store-angular",
       "created_at": "2023-07-02T00:00:00Z",
       "updated_at": "2024-06-29T00:00:00Z"
@@ -30,8 +30,8 @@
     {
       "id": 4,
       "name": "Academic Portfolio ",
-      "description": "My first Portfolio",
-      "image": null,
+      "description": "My first Portfolio ",
+      "image":"https://media.licdn.com/dms/image/D4D22AQHu3-3S9RUy9Q/feedshare-shrink_2048_1536/0/1712760983857?e=1723075200&v=beta&t=wFMH58Lr-YjNjP3lInUTxl6iafR21tNxRG6pVmecuOA",
       "link": "https://diogosousainf.github.io/diogosousaPortfolio.github.io/",
       "created_at": "2023-07-02T00:00:00Z",
       "updated_at": "2024-06-26T00:00:00Z"
@@ -40,7 +40,7 @@
       "id": 5,
       "name": "Blog-Trips-AspNet Public",
       "description": "C# project.",
-      "image": null,
+      "image": "https://media.licdn.com/dms/image/D5622AQGeOIJWA462Mw/feedshare-shrink_2048_1536/0/1718798744888?e=1723075200&v=beta&t=PTU0-q6NjYHj7URtvkA2roivxC4Y8lAyCR7GxA4F9Lw",
       "link": "https://github.com/diogosousainf/Blog-Trips-AspNet",
       "created_at": "2023-07-02T00:00:00Z",
       "updated_at": "2024-06-19T00:00:00Z"
@@ -49,7 +49,7 @@
       "id": 7,
       "name": "Infinite-arcade ",
       "description": "PHP project.",
-      "image": null,
+      "image": "https://media.licdn.com/dms/image/D4D22AQGXy_lGQ8KK8A/feedshare-shrink_2048_1536/0/1714068776990?e=1723075200&v=beta&t=w9vXiR8CGzF9pSULgUwGuCurgUsncLfZAOk6V3UpsTk",
       "link": null,
       "created_at": "2023-04-27T00:00:00Z",
       "updated_at": "2023-04-27T00:00:00Z"
@@ -58,7 +58,7 @@
       "id": 8,
       "name": "C# Academy-Manage",
       "description": "ADOSMELHORES Asset Management System Description This C# program was developed to meet the asset management needs of ADOSMELHORES, a training company. The application provides functionalities to manage information about employees, directors, secretaries, trainers, and coordinators. The program utilizes classes and inheritance to organize and perform the specified tasks.",
-      "image": null,
+      "image": "https://i.imgur.com/skjnIU4.png",
       "link": "https://github.com/diogosousainf/Csharp-Academy-Manage",
       "created_at": "2023-04-19T00:00:00Z",
       "updated_at": "2023-04-19T00:00:00Z"
@@ -67,7 +67,7 @@
       "id": 10,
       "name": " Academic web-app-stock-management ",
       "description": "HTML project.",
-      "image": null,
+      "image": "https://github.com/diogosousainf/web-app-stock-management-javascript/blob/main/2.png?raw=true",
       "link": "https://github.com/diogosousainf/web-app-stock-management-javascript",
       "created_at": "2023-04-06T00:00:00Z",
       "updated_at": "2023-04-06T00:00:00Z"
@@ -76,7 +76,7 @@
       "id": 12,
       "name": "Crypto-app-React",
       "description": "JavaScript project.",
-      "image": null,
+      "image": "https://private-user-images.githubusercontent.com/139590885/304238912-cfd343f5-6482-4acf-b804-d8437d4734d6.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjAxOTA1MTIsIm5iZiI6MTcyMDE5MDIxMiwicGF0aCI6Ii8xMzk1OTA4ODUvMzA0MjM4OTEyLWNmZDM0M2Y1LTY0ODItNGFjZi1iODA0LWQ4NDM3ZDQ3MzRkNi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcwNVQxNDM2NTJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mZWQxMzdmZjRlYjQ5ZGEyYzYyZmViZjNlZWQ3M2JiNzQyMWY5NGVhZDY5Yjk4YjE3ODk3NWRjYTZmOTVmMGQxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.2CZmQkLGYtz2z2-OnO_hfq0SgGVf2xlnhcOUULEWvVw",
       "link": "https://github.com/diogosousainf/crypto-app-React",
       "created_at": "2023-02-12T00:00:00Z",
       "updated_at": "2023-02-12T00:00:00Z"
@@ -94,7 +94,7 @@
       "id": 15,
       "name": "to-do-list-React",
       "description": "JavaScript project.",
-      "image": null,
+      "image": "https://private-user-images.githubusercontent.com/139590885/302121357-9c3e5709-5943-422a-b1d2-a165aec697cc.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjAxOTQ0MzMsIm5iZiI6MTcyMDE5NDEzMywicGF0aCI6Ii8xMzk1OTA4ODUvMzAyMTIxMzU3LTljM2U1NzA5LTU5NDMtNDIyYS1iMWQyLWExNjVhZWM2OTdjYy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcwNVQxNTQyMTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iMmEwNmE2ZWFlOTk2MWI1MWFiYzgxOWYwYTJkODQzYzIzNDE0ZTY0NGZkZmMzYTA2M2U0MDM3NzQ0ZjI4ZjQ1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.zqbrsZ6UHTF6Q3pFncSWBO9BQ2mCo8hnScKZg7YPB6U",
       "link": "https://github.com/diogosousainf/to-do-list-React",
       "created_at": "2023-02-04T00:00:00Z",
       "updated_at": "2023-02-04T00:00:00Z"
