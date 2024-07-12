@@ -23,6 +23,7 @@
     "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
     "file-saver": "^2.0.5",
+    "json-server": "^1.0.0-beta.1",
     "ngx-scrollreveal": "^3.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
