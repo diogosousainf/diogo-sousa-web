@@ -8,7 +8,7 @@ import { Project } from './project';
   providedIn: 'root'
 })
 export class ProjectService {
-  private apiURL = 'http://51.44.23.222/api/projects'; // Atualizado para JSON Server
+  private apiURL = 'http://localhost:3000/projects';
   private httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json'
