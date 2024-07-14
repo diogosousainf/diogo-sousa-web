@@ -1,0 +1,131 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Innodrive (In production)",
+      "description": "Innodrive is a complete internal web app for a welding company to manage travel and fleet.",
+      "image": "http://innodriveportal-env.eba-jgm2jqtj.eu-north-1.elasticbeanstalk.com/images/App-logo.png",
+      "link": "https://github.com/JoaoMB1337/Portal-Automobile-Project",
+      "created_at": "2023-07-02T00:00:00Z",
+      "updated_at": "2024-07-02T00:00:00Z"
+    },
+    {
+      "id": 2,
+      "name": "CryptoMon (In production)",
+      "description": "CryptoMon Private project",
+      "image": "https://ideogram.ai/assets/image/lossless/response/0EBhXQxKSLqwdBRNY4893A",
+      "link": "https://github.com/diogosousainf/CryptoMon",
+      "created_at": "2023-07-02T00:00:00Z",
+      "updated_at": "2024-07-02T00:00:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Infinite-arcade",
+      "description": "PHP project.",
+      "image": "https://media.licdn.com/dms/image/D4D22AQGXy_lGQ8KK8A/feedshare-shrink_2048_1536/0/1714068776990?e=1723075200&v=beta&t=w9vXiR8CGzF9pSULgUwGuCurgUsncLfZAOk6V3UpsTk",
+      "link": null,
+      "created_at": "2023-04-27T00:00:00Z",
+      "updated_at": "2023-04-27T00:00:00Z"
+    },
+    {
+      "id": 4,
+      "name": "Academic Portfolio",
+      "description": "My first Portfolio",
+      "image": "https://media.licdn.com/dms/image/D4D22AQHu3-3S9RUy9Q/feedshare-shrink_2048_1536/0/1712760983857?e=1723075200&v=beta&t=wFMH58Lr-YjNjP3lInUTxl6iafR21tNxRG6pVmecuOA",
+      "link": "https://diogosousainf.github.io/diogosousaPortfolio.github.io/",
+      "created_at": "2023-07-02T00:00:00Z",
+      "updated_at": "2024-06-26T00:00:00Z"
+    },
+    {
+      "id": 5,
+      "name": "diogo-sousa-web",
+      "description": "Is a personal website i build using Angular and JSON Server, is the project you are seeing right now.",
+      "image": "https://i.imgur.com/p1JvWHa.png",
+      "link": "https://github.com/diogosousainf/diogo-sousa-web",
+      "created_at": "2023-07-02T00:00:00Z",
+      "updated_at": "2024-06-29T00:00:00Z"
+    },
+    {
+      "id": 10,
+      "name": "Crypto-list-React",
+      "description": "JavaScript project.",
+      "image": "https://ideogram.ai/assets/image/lossless/response/a-chgSWeTReMXxvdjIt3tQ",
+      "link": "https://github.com/diogosousainf/crypto-app-React",
+      "created_at": "2023-02-12T00:00:00Z",
+      "updated_at": "2023-02-12T00:00:00Z"
+    },
+    {
+      "id": 7,
+      "name": "Blog Trips AspNet ",
+      "description": "C# project.",
+      "image": "https://media.licdn.com/dms/image/D5622AQGeOIJWA462Mw/feedshare-shrink_2048_1536/0/1718798744888?e=1723075200&v=beta&t=PTU0-q6NjYHj7URtvkA2roivxC4Y8lAyCR7GxA4F9Lw",
+      "link": "https://github.com/diogosousainf/Blog-Trips-AspNet",
+      "created_at": "2023-07-02T00:00:00Z",
+      "updated_at": "2024-06-19T00:00:00Z"
+    },
+    {
+      "id": 8,
+      "name": "C# Academy-Manage",
+      "description": "ADOSMELHORES Asset Management System Description This C# program was developed to meet the asset management needs of ADOSMELHORES, a training company. The application provides functionalities to manage information about employees, directors, secretaries, trainers, and coordinators. The program utilizes classes and inheritance to organize and perform the specified tasks.",
+      "image": "https://i.imgur.com/skjnIU4.png",
+      "link": "https://github.com/diogosousainf/Csharp-Academy-Manage",
+      "created_at": "2023-04-19T00:00:00Z",
+      "updated_at": "2023-04-19T00:00:00Z"
+    },
+    {
+      "id": 9,
+      "name": "Academic web-app-stock-management",
+      "description": "HTML project.",
+      "image": "https://github.com/diogosousainf/web-app-stock-management-javascript/blob/main/2.png?raw=true",
+      "link": "https://github.com/diogosousainf/web-app-stock-management-javascript",
+      "created_at": "2023-04-06T00:00:00Z",
+      "updated_at": "2023-04-06T00:00:00Z"
+    },
+
+    {
+      "id": 6,
+      "name": "Academic web store",
+      "description": "Angular project.",
+      "image": null,
+      "link": "https://github.com/diogosousainf/web-store-angular",
+      "created_at": "2023-07-02T00:00:00Z",
+      "updated_at": "2024-06-29T00:00:00Z"
+    },
+    {
+      "id": 11,
+      "name": "Calculator-c-forms",
+      "description": "C# project.",
+      "image": null,
+      "link": "https://github.com/diogosousainf/calculator-c-forms",
+      "created_at": "2023-02-05T00:00:00Z",
+      "updated_at": "2023-02-05T00:00:00Z"
+    },
+    {
+      "id": 12,
+      "name": "to-do-list-React",
+      "description": "JavaScript project.",
+      "image": null,
+      "link": "https://github.com/diogosousainf/to-do-list-React",
+      "created_at": "2023-02-04T00:00:00Z",
+      "updated_at": "2023-02-04T00:00:00Z"
+    },
+    {
+      "id": 13,
+      "name": "Academic C# Rent-a-car",
+      "description": "C# Console Project.",
+      "image": null,
+      "link": "https://github.com/diogosousainf/Rent-a-car-project",
+      "created_at": "2023-01-25T00:00:00Z",
+      "updated_at": "2023-01-25T00:00:00Z"
+    },
+    {
+      "id": 14,
+      "name": "Academic RestaurantConsole",
+      "description": "Restaurant C++ console.",
+      "image": null,
+      "link": "https://github.com/diogosousainf/RestaurantConsole",
+      "created_at": "2023-11-23T00:00:00Z",
+      "updated_at": "2023-11-23T00:00:00Z"
+    }
+  ]
+}
