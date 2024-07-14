@@ -25,33 +25,6 @@ export class AddProjectComponent {
 
   constructor(private projectService: ProjectService, private router: Router) {}
 
-  addProject(): void {
-    const newProject: Project = {
-      id: this.generateUniqueId(),
-      name: this.name,
-      description: this.description,
-      image: this.image,
-      link: this.link,
-      created_at: '',
-      updated_at: ''
-    };
-    this.projectService.addProject(newProject).subscribe(() => {
-      this.successMessage = 'Project added successfully!';
-      this.clearFields();
-      setTimeout(() => {
-        this.successMessage = '';
-      }, 3000);
-    });
-  }
 
-  clearFields(): void {
-    this.name = '';
-    this.description = '';
-    this.image = '';
-    this.link = '';
-  }
-  generateUniqueId(): number {
-    return Math.floor(Math.random() * 1000000);
-  }
 
 }

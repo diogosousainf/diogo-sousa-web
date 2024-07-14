@@ -2,10 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { ProjectService } from '../project.service';
 import { Project } from '../project';
-import {NgForOf, AsyncPipe, NgClass, NgIf, SlicePipe} from "@angular/common";
+import {NgForOf, AsyncPipe, NgClass, NgIf, SlicePipe, CommonModule} from "@angular/common";
 import {RouterOutlet} from "@angular/router";
-
-
 
 import {
   MatCell,
@@ -35,7 +33,8 @@ import {
     MatCellDef,
     MatRowDef,
     NgIf,
-    SlicePipe
+    SlicePipe,
+    CommonModule
   ],
   styleUrls: ['./project-list.component.css']
 })
@@ -44,13 +43,11 @@ export class ProjectListComponent implements OnInit {
   displayedColumns: string[] = ['name', 'link'];
   selectedProject: Project | null = null;
 
-
   constructor(private projectService: ProjectService) {}
 
   ngOnInit(): void {
     this.projectService.getProjects().subscribe(data => {
       this.projects = data;
-
     });
   }
 
@@ -61,8 +58,4 @@ export class ProjectListComponent implements OnInit {
   closeModal(): void {
     this.selectedProject = null;
   }
-
-
-
 }
-
