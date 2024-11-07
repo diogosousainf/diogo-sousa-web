@@ -11,10 +11,10 @@
     },
     {
       "id": 2,
-      "name": "CryptoMon (In production)",
-      "description": "CryptoMon Private project",
-      "image": "https://ideogram.ai/assets/image/lossless/response/0EBhXQxKSLqwdBRNY4893A",
-      "link": "https://github.com/diogosousainf/CryptoMon",
+      "name": "Stock Software (In production)",
+      "description": "Stock Stock Software is a complete internal web app for a welding company to manage travel and fleet.",
+      "image": "https://i.ibb.co/3CRyb3D/Captura-de-ecr-2024-11-07-160437.png",
+      "link": "https://stock-management-nextjs-gpyextfo4-diogosousainfs-projects.vercel.app/products",
       "created_at": "2023-07-02T00:00:00Z",
       "updated_at": "2024-07-02T00:00:00Z"
     },
@@ -31,7 +31,7 @@
       "id": 4,
       "name": "Academic Portfolio",
       "description": "My first Portfolio",
-      "image": "https://media.licdn.com/dms/image/v2/D4D22AQHu3-3S9RUy9Q/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1712760983857?e=1727308800&v=beta&t=MYcPJEXEMUBYLWmLXx37SthSRM6rJath8eHXmYUeCw8",
+      "image": "https://i.ibb.co/gZvqJtT/Captura-de-ecr-2024-11-07-160748.png",
       "link": "https://diogosousainf.github.io/diogosousaPortfolio.github.io/",
       "created_at": "2023-07-02T00:00:00Z",
       "updated_at": "2024-06-26T00:00:00Z"
@@ -58,7 +58,7 @@
       "id": 7,
       "name": "Blog Trips AspNet ",
       "description": "C# project.",
-      "image": "https://media.licdn.com/dms/image/v2/D5622AQFtbEmM_wcG1w/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1718798747933?e=1727308800&v=beta&t=Kq07j3ltztB3Y28Ct76SPqD0TwM8TlWuRg_fxEX8vLM",
+      "image": "https://media.licdn.com/dms/image/v2/D5622AQFtbEmM_wcG1w/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1718798747933?e=1733961600&v=beta&t=WR6ta6ikgA3VvfNKX_l8qNHvWHpxXltOxC_E7_GRS90",
       "link": "https://github.com/diogosousainf/Blog-Trips-AspNet",
       "created_at": "2023-07-02T00:00:00Z",
       "updated_at": "2024-06-19T00:00:00Z"
