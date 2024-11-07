@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { ProjectService } from '../project.service';
-import { Project } from '../project';
+import { Project } from '../Project';
 import {NgForOf, AsyncPipe, NgClass, NgIf, SlicePipe, CommonModule} from "@angular/common";
 import {RouterOutlet} from "@angular/router";
 
