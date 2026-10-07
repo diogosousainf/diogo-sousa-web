@@ -1,0 +1,74 @@
+<section class="section work" id="work">
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      @for (s of stack; track $index) {
+        <span>{{ s }}</span><span class="marquee__star">✳</span>
+      }
+    </div>
+  </div>
+
+  <div class="shell">
+    <div class="section__head" reveal>
+      <p class="eyebrow mono">{{ i18n.t().work.eyebrow }}</p>
+      <h2 class="section__title">{{ i18n.t().work.title }}</h2>
+      <p class="section__intro">{{ i18n.t().work.intro }}</p>
+    </div>
+
+    <div class="cases">
+      @for (c of i18n.t().work.cases; track c.id; let odd = $odd) {
+        <article class="case" [class.case--flip]="odd" reveal
+                 [style.--c-bg]="c.theme.bg" [style.--c-fg]="c.theme.fg"
+                 [style.--c-accent]="c.theme.accent" [style.--c-muted]="c.theme.muted">
+          <div class="case__stage" #stage (pointermove)="tilt($event, stage)" (pointerleave)="untilt(stage)">
+            <span class="case__num" aria-hidden="true">{{ c.index }}</span>
+            <div class="case__devices">
+              @for (s of c.shots; track s.src) {
+                @if (s.kind === 'desktop') {
+                  <figure class="device device--desktop">
+                    <div class="device__bar"><i></i><i></i><i></i></div>
+                    <img [src]="s.src" [alt]="s.alt" loading="lazy" decoding="async">
+                  </figure>
+                } @else {
+                  <figure class="device device--mobile">
+                    <img [src]="s.src" [alt]="s.alt" loading="lazy" decoding="async">
+                  </figure>
+                }
+              }
+            </div>
+          </div>
+
+          <div class="case__body">
+            <div class="case__top mono">
+              <span>{{ c.kicker }}</span>
+              <span class="case__status"><span class="dot"></span>{{ c.status }} · {{ c.year }}</span>
+            </div>
+            <h3 class="case__name">{{ c.name }}</h3>
+            <p class="case__title serif">{{ c.title }}</p>
+            <p class="case__summary">{{ c.summary }}</p>
+
+            <p class="case__label mono">{{ i18n.t().work.highlightsLabel }}</p>
+            <ul class="case__list">
+              @for (h of c.highlights; track h) {
+                <li>{{ h }}</li>
+              }
+            </ul>
+
+            <div class="case__foot">
+              <ul class="chips" [attr.aria-label]="i18n.t().work.stackLabel">
+                @for (s of c.stack; track s) {
+                  <li class="chip">{{ s }}</li>
+                }
+              </ul>
+              @if (c.link) {
+                <a class="btn btn--accent btn--sm" [href]="c.link.href" target="_blank" rel="noopener">{{ c.link.label }} <span aria-hidden="true">↗</span></a>
+              } @else {
+                <span class="mono case__private">🔒 {{ i18n.t().work.private }}</span>
+              }
+            </div>
+          </div>
+        </article>
+      }
+    </div>
+
+  </div>
+</section>

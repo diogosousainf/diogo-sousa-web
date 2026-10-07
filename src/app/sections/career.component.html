@@ -1,0 +1,76 @@
+<section class="section career" id="career">
+  <div class="shell">
+    <div class="section__head" reveal>
+      <p class="eyebrow mono">{{ i18n.t().career.eyebrow }}</p>
+      <h2 class="section__title">{{ i18n.t().career.title }}</h2>
+      <p class="section__intro">{{ i18n.t().career.intro }}</p>
+    </div>
+
+    <article class="meiv" reveal>
+      <div class="meiv__side">
+        <p class="mono meiv__period"><span class="dot"></span>{{ m.period }}</p>
+        <h3 class="meiv__role">{{ m.role }}</h3>
+        <p class="meiv__org">{{ m.org }} <span class="mono">· {{ m.place }}</span></p>
+        <p class="meiv__text">{{ m.text }}</p>
+        <p class="case__label mono">{{ m.domainsLabel }}</p>
+        <ul class="chips chips--dense">
+          @for (d of m.domains; track d) {
+            <li class="chip">{{ d }}</li>
+          }
+        </ul>
+      </div>
+
+      <div class="meiv__main">
+        <div class="tabs" role="tablist" #tabs (keydown)="onKey($event, m.phases.length, tabs)">
+          @for (p of m.phases; track p.label; let i = $index) {
+            <button class="tab" role="tab" type="button"
+                    [id]="'tab-' + i" [attr.aria-controls]="'panel-' + i"
+                    [attr.aria-selected]="phase === i" [tabIndex]="phase === i ? 0 : -1"
+                    (click)="phase = i">
+              <span>{{ p.label }}</span>
+              <span class="tab__count mono">{{ p.items.length }}</span>
+            </button>
+          }
+          <span class="tabs__ink" [style.--n]="m.phases.length" [style.--i]="phase" aria-hidden="true"></span>
+        </div>
+
+        @for (p of m.phases; track p.label; let i = $index) {
+          @if (phase === i) {
+            <ol class="deliveries" role="tabpanel" [id]="'panel-' + i" [attr.aria-labelledby]="'tab-' + i">
+              @for (item of p.items; track item.title; let j = $index) {
+                <li class="delivery" [style.--d]="j">
+                  <span class="delivery__n mono">{{ (j + 1).toString().padStart(2, '0') }}</span>
+                  <div>
+                    <p class="delivery__title">{{ item.title }}</p>
+                    @if (item.detail) {
+                      <p class="delivery__detail">{{ item.detail }}</p>
+                    }
+                  </div>
+                  <span class="delivery__tags">
+                    @for (tag of item.tags; track tag) {
+                      <span class="tag mono">{{ tag }}</span>
+                    }
+                  </span>
+                </li>
+              }
+            </ol>
+          }
+        }
+      </div>
+    </article>
+
+    <p class="eyebrow mono career__before" reveal>{{ i18n.t().career.before }}</p>
+    <ol class="timeline">
+      @for (r of i18n.t().career.roles; track r.org; let i = $index) {
+        <li class="timeline__item" reveal [revealDelay]="i * 80">
+          <span class="timeline__period mono">{{ r.period }}</span>
+          <div class="timeline__body">
+            <h3 class="timeline__org">{{ r.org }}</h3>
+            <p class="timeline__role">{{ r.role }} <span class="mono">· {{ r.place }}</span></p>
+            <p class="timeline__text">{{ r.text }}</p>
+          </div>
+        </li>
+      }
+    </ol>
+  </div>
+</section>

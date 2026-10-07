@@ -1,0 +1,64 @@
+<section class="facts" aria-label="Facts">
+  <div class="shell"><div class="facts__grid">
+    @for (f of facts(); track f.label; let i = $index) {
+      <div class="fact" reveal [revealDelay]="i * 90">
+        <span class="fact__value">{{ f.value }}</span>
+        <span class="fact__label">{{ f.label }}</span>
+      </div>
+    }
+  </div></div>
+</section>
+
+<section class="section about" id="about">
+  <div class="shell about__grid">
+    <figure class="about__photo" reveal>
+      <img src="assets/bannerdiogo.jpg" alt="Diogo Sousa" loading="lazy" decoding="async">
+      <figcaption class="mono">Póvoa de Varzim · Porto</figcaption>
+    </figure>
+
+    <div class="about__body">
+      <div reveal>
+        <p class="eyebrow mono">{{ i18n.t().about.eyebrow }}</p>
+        <h2 class="section__title">{{ i18n.t().about.title }}</h2>
+        @for (p of i18n.t().about.paragraphs; track p) {
+          <p class="about__p">{{ p }}</p>
+        }
+      </div>
+
+      <div class="about__skills" reveal>
+        <p class="case__label mono">{{ i18n.t().about.skillsLabel }}</p>
+        <dl class="skills">
+          @for (s of i18n.t().about.skills; track s.group) {
+            <div class="skills__row">
+              <dt class="mono">{{ s.group }}</dt>
+              <dd>
+                @for (it of s.items; track it) {
+                  <span class="chip">{{ it }}</span>
+                }
+              </dd>
+            </div>
+          }
+        </dl>
+      </div>
+
+      <div class="about__cols" reveal>
+        <div>
+          <p class="case__label mono">{{ i18n.t().about.trainingLabel }}</p>
+          <ul class="plain">
+            @for (t of i18n.t().about.training; track t) {
+              <li>{{ t }}</li>
+            }
+          </ul>
+        </div>
+        <div>
+          <p class="case__label mono">{{ i18n.t().about.languagesLabel }}</p>
+          <ul class="plain">
+            @for (l of i18n.t().about.languages; track l) {
+              <li>{{ l }}</li>
+            }
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

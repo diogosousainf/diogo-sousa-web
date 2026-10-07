@@ -1,0 +1,42 @@
+<header class="hero" id="top">
+  <canvas #canvas class="hero__canvas" aria-hidden="true"></canvas>
+  <div class="hero__glow" aria-hidden="true"></div>
+
+  <div class="hero__inner shell">
+    <div class="hero__meta mono">
+      <span class="pill pill--live"><span class="dot"></span>{{ i18n.t().hero.status }}</span>
+      <span class="hero__clock">{{ i18n.t().hero.local }} · {{ time }}</span>
+    </div>
+
+    <h1 class="hero__name" #name aria-label="Diogo Sousa">
+      <span class="hero__row" aria-hidden="true">
+        @for (c of first; track $index) {
+          <span class="char" [style.--i]="$index">{{ c }}</span>
+        }
+      </span>
+      <span class="hero__row hero__row--indent" aria-hidden="true">
+        @for (c of last; track $index) {
+          <span class="char" [style.--i]="$index + 5">{{ c }}</span>
+        }<span class="hero__dot">.</span>
+      </span>
+    </h1>
+
+    <div class="hero__bottom">
+      <p class="hero__role">
+        <span class="serif">—</span>
+        <span class="hero__roles" aria-live="polite">
+          @for (r of i18n.t().hero.roles; track r; let i = $index) {
+            <span class="hero__roleItem" [class.is-active]="i === roleIndex">{{ r }}</span>
+          }
+        </span>
+      </p>
+      <p class="hero__lead">{{ i18n.t().hero.lead }}</p>
+      <div class="hero__ctas">
+        <a class="btn btn--accent" href="#work">{{ i18n.t().hero.ctaWork }} <span aria-hidden="true">↓</span></a>
+        <a class="btn btn--ghost" href="#contact">{{ i18n.t().hero.ctaContact }}</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__scroll mono" aria-hidden="true"><span></span>scroll</div>
+</header>

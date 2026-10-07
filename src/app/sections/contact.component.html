@@ -1,0 +1,35 @@
+<section class="section contact" id="contact">
+  <div class="shell">
+    <p class="eyebrow mono" reveal>{{ i18n.t().contact.eyebrow }}</p>
+    <h2 class="contact__title" reveal>{{ i18n.t().contact.title }}</h2>
+    <p class="section__intro" reveal>{{ i18n.t().contact.text }}</p>
+
+    <a class="contact__email" [href]="'mailto:' + email" reveal>
+      <span>{{ email }}</span>
+      <span class="contact__arrow" aria-hidden="true">→</span>
+    </a>
+
+    <div class="contact__actions" reveal>
+      <button class="btn btn--ghost" type="button" (click)="copy()">{{ copied ? i18n.t().contact.copied : i18n.t().contact.copy }}</button>
+      <a class="btn btn--ghost" [href]="cv" download>{{ i18n.t().contact.cv }} <span aria-hidden="true">↓</span></a>
+      @for (s of socials; track s.label) {
+        <a class="btn btn--ghost" [href]="s.href" target="_blank" rel="noopener">{{ s.label }} <span aria-hidden="true">↗</span></a>
+      }
+    </div>
+
+    <a class="studio" [href]="'mailto:' + studioEmail" reveal>
+      <div>
+        <p class="studio__brand">d<span>.</span>software</p>
+        <p class="studio__label">{{ i18n.t().contact.studioLabel }}</p>
+        <p class="studio__text">{{ i18n.t().contact.studioText }}</p>
+      </div>
+      <span class="studio__cta">{{ studioEmail }} <span aria-hidden="true">→</span></span>
+    </a>
+  </div>
+
+  <div class="shell"><footer class="footer mono">
+    <span>© {{ year }} Diogo Sousa</span>
+    <span>{{ i18n.t().footer }}</span>
+    <a href="#top">↑ Top</a>
+  </footer></div>
+</section>

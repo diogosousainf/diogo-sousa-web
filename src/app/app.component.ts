@@ -1,45 +1,47 @@
-import {Component, OnInit} from '@angular/core';
-import {RouterLink, RouterOutlet} from '@angular/router';
-import {ProjectListComponent} from "./project-list/project-list.component";
-import {AddProjectComponent} from "./add-project/add-project.component";
-import {HttpClientModule} from "@angular/common/http";
-import {Project} from "./Project";
-import {ProjectService} from "./project.service";
-import {WelcomeComponent} from "./welcome/welcome.component";
-import {AboutComponent} from "./about/about.component";
+import { Component, HostListener, ViewChild, inject } from '@angular/core';
+import { LangService } from './lang.service';
+import { PaletteComponent } from './palette.component';
+import { HeroComponent } from './sections/hero.component';
+import { WorkComponent } from './sections/work.component';
+import { CareerComponent } from './sections/career.component';
+import { AboutComponent } from './sections/about.component';
+import { ContactComponent } from './sections/contact.component';
 
+const SECTIONS = ['work', 'career', 'about', 'contact'] as const;
+type SectionId = (typeof SECTIONS)[number];
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ProjectListComponent, AddProjectComponent, HttpClientModule, RouterLink, WelcomeComponent, AboutComponent],
+  imports: [PaletteComponent, HeroComponent, WorkComponent, CareerComponent, AboutComponent, ContactComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
 })
+export class AppComponent {
+  readonly i18n = inject(LangService);
+  readonly sections = SECTIONS;
+  readonly isMac = /Mac|iPhone|iPad/.test(navigator.platform);
+  @ViewChild(PaletteComponent) palette!: PaletteComponent;
 
-export class AppComponent implements OnInit {
+  progress = 0;
+  scrolled = false;
+  current: SectionId | null = null;
+  menuOpen = false;
 
-  ngOnInit(): void {
-    this.smoothScroll();
+  @HostListener('window:scroll')
+  onScroll(): void {
+    const doc = document.documentElement;
+    const max = doc.scrollHeight - doc.clientHeight;
+    this.progress = max > 0 ? doc.scrollTop / max : 0;
+    this.scrolled = doc.scrollTop > 40;
+    const probe = window.innerHeight * 0.35;
+    this.current = null;
+    for (const id of SECTIONS) {
+      const el = document.getElementById(id);
+      if (el && el.getBoundingClientRect().top <= probe) this.current = id;
+    }
   }
 
-  private smoothScroll(): void {
-    document.querySelectorAll('a[href^="#"]').forEach((anchor: Element) => {
-      anchor.addEventListener('click', (e: Event) => {
-        e.preventDefault();
-        const targetId = (e.target as HTMLElement).getAttribute('href');
-        if (targetId && targetId.startsWith('#')) {
-          const id = targetId.slice(1);
-          const target = document.getElementById(id);
-          if (target) {
-            window.scrollTo({
-              top: target.offsetTop,
-              behavior: 'smooth'
-            });
-          }
-        }
-      });
-    });
+  label(id: SectionId): string {
+    return this.i18n.t().nav[id];
   }
-
 }
