@@ -108,8 +108,8 @@ export interface Content {
 }
 
 const meivDomains = {
-  pt: ['SST', 'Qualidade', 'Compras', 'Obras', 'RH', 'Gestão Documental', 'Ponto / Horas', 'Viaturas', 'Ferramentaria', 'Centros de Custo', 'Orçamentos / PCI', 'Andaimes', 'Vista Financeira', 'i18n EN'],
-  en: ['Health & Safety', 'Quality', 'Procurement', 'Sites', 'HR', 'Document Mgmt', 'Time tracking', 'Fleet', 'Tooling', 'Cost Centres', 'Budgets / PCI', 'Scaffolding', 'Financial View', 'i18n EN'],
+  pt: ['SST', 'Qualidade', 'Compras', 'Obras', 'RH', 'Gestão Documental', 'Assiduidade', 'Viaturas', 'Equipamentos', 'Centros de Custo', 'Orçamentação', 'Despesas e Pagamentos', 'Vista Financeira', 'i18n EN'],
+  en: ['Health & Safety', 'Quality', 'Procurement', 'Sites', 'HR', 'Document Mgmt', 'Attendance', 'Fleet', 'Equipment', 'Cost Centres', 'Budgeting', 'Expenses & Payments', 'Financial View', 'i18n EN'],
 };
 
 export const CONTENT: Record<Lang, Content> = {
@@ -125,7 +125,7 @@ export const CONTENT: Record<Lang, Content> = {
       hint: 'atalhos',
     },
     facts: [
-      { value: '2024', label: 'o ano em que entrei na Meivcore, onde construo a Meivworld' },
+      { value: '2025', label: 'o ano em que entrei na Meivcore, para desenvolver a plataforma interna do grupo' },
       { value: '14', label: 'áreas de negócio onde já entreguei funcionalidades' },
       { value: '0 €', label: 'de custo mensal da app de orçamentos' },
       { value: '5 anos', label: 'a fabricar kayaks em fibra de carbono antes do código' },
@@ -209,9 +209,9 @@ export const CONTENT: Record<Lang, Content> = {
     career: {
       eyebrow: '02 · Carreira',
       title: 'Onde ponho o código a trabalhar.',
-      intro: 'Na Meivcore desenvolvo a Meivworld, a plataforma interna em OutSystems usada no dia a dia das obras, da segurança, das compras e dos recursos humanos do grupo.',
+      intro: 'Na Meivcore desenvolvo a plataforma interna do grupo em OutSystems, usada todos os dias nas obras, na segurança, nas compras, nas finanças e nos recursos humanos.',
       meiv: {
-        period: '2024 — hoje',
+        period: 'Fev 2025 — hoje',
         role: 'OutSystems Developer',
         org: 'Meivcore Group',
         place: 'Porto',
@@ -220,40 +220,37 @@ export const CONTENT: Record<Lang, Content> = {
         domains: meivDomains.pt,
         phases: [
           {
-            label: '2024',
-            items: [
-              { title: 'Melhorias nos Incidentes e Relatórios SST', tags: ['SST'] },
-              { title: 'Feedback dentro da obra', detail: 'Registo de feedback diretamente a partir da obra.', tags: ['Obras'] },
-            ],
-          },
-          {
             label: '2025 · S1',
             items: [
-              { title: 'Módulo Qualidade: Ocorrências', detail: 'Criação, detalhe, emails, histórico, galeria e colaboradores envolvidos.', tags: ['Qualidade', 'Novo módulo'] },
-              { title: 'Tooling Vault', detail: 'App nova de gestão de artigos em contentores de obra, com Artigos e Colaboradores e subdetalhe completo.', tags: ['Ferramentaria', 'Nova app'] },
-              { title: 'Tradução da plataforma para inglês', detail: 'Obras, Encomendas, Vista Financeira, Orçamentos e Centros de Custo.', tags: ['i18n'] },
-              { title: 'Melhorias transversais', detail: 'Compras, Obras, RH, Viaturas, PCI/Orçamentos, Centros de Custo e Ferramentaria.', tags: ['Compras', 'RH', 'Viaturas'] },
-              { title: 'User Manager, Vista Financeira, Ponto e Horas Reportadas', tags: ['Ponto', 'Financeiro'] },
+              { title: 'Novo módulo de Gestão da Qualidade', detail: 'Ciclo completo de não conformidades: registo, acompanhamento, histórico de alterações, evidências fotográficas, intervenientes e notificações automáticas por email.', tags: ['Qualidade', 'Módulo novo'] },
+              { title: 'Aplicação de gestão de equipamentos em obra', detail: 'Nova aplicação para controlar o inventário em contentores de obra e a atribuição de artigos a colaboradores.', tags: ['Logística', 'App nova'] },
+              { title: 'Internacionalização da plataforma', detail: 'Tradução para inglês das áreas operacionais e financeiras: obras, encomendas, orçamentação, centros de custo e vista financeira.', tags: ['i18n', 'Financeiro'] },
+              { title: 'Evolução dos módulos core do ERP', detail: 'Melhorias em compras, obras, recursos humanos, frota, orçamentação, centros de custo, gestão de utilizadores e registo de horas.', tags: ['Compras', 'RH', 'Obras'] },
+              { title: 'Segurança e comunicação em obra', detail: 'Melhorias no reporte de incidentes e nos relatórios de SST, e um canal de feedback a partir da obra.', tags: ['SST'] },
             ],
           },
           {
             label: '2025 · S2',
             items: [
-              { title: 'Diálogos de Segurança (DDS)', detail: 'Módulo novo dentro de SST.', tags: ['SST', 'Novo módulo'] },
-              { title: 'Safety Walks', detail: 'Registo, detalhe, PDF, histórico e tradução no MyMeivworld.', tags: ['SST', 'PDF'] },
-              { title: 'Assinatura digital de documentos do colaborador', detail: 'Módulo novo de Gestão Documental.', tags: ['Gestão Documental', 'Novo módulo'] },
-              { title: 'Meivworld.ID: ponto via app', detail: 'Controlo de frentes, permissões e histórico.', tags: ['Ponto', 'Mobile'] },
-              { title: 'Serviços de Andaimes', detail: 'Ação "Anular" e respetivos impactos.', tags: ['Andaimes'] },
+              { title: 'Digitalização da Segurança e Saúde no Trabalho', detail: 'Novos fluxos para diálogos de segurança e inspeções em obra, com registo, histórico, relatórios em PDF e acesso na app móvel dos colaboradores.', tags: ['SST', 'Mobile', 'PDF'] },
+              { title: 'Assinatura digital de documentos', detail: 'Novo módulo de gestão documental que permite aos colaboradores assinar documentos digitalmente.', tags: ['Gestão Documental', 'Módulo novo'] },
+              { title: 'Registo de assiduidade por app móvel', detail: 'Picagem de ponto pelo telemóvel, com controlo por frente de obra, permissões por perfil e histórico.', tags: ['Assiduidade', 'Mobile'] },
             ],
           },
           {
             label: '2026',
             items: [
-              { title: 'Compras: Processamento de Faturas V3', detail: 'Revamp com dupla validação contra ordens de compra e melhorias de UI.', tags: ['Compras', 'Revamp'] },
-              { title: 'Atribuição automática de EPS nas obras', tags: ['Obras', 'Automação'] },
-              { title: 'Meivworld.ID', detail: 'Horário de referência por frente, pausa de almoço e filtros.', tags: ['Ponto', 'Mobile'] },
-              { title: 'Diálogos de Segurança', detail: 'Estados e listagens.', tags: ['SST'] },
-              { title: 'Correções e melhorias contínuas', detail: 'Ocorrências, Obras, Compras e Gestão Documental.', tags: ['Manutenção'] },
+              { title: 'Reestruturação do processamento de faturas de fornecedores', detail: 'Nova versão do circuito, com dupla validação contra as ordens de compra e uma interface redesenhada.', tags: ['Compras', 'Financeiro'] },
+              { title: 'Evolução do registo de assiduidade', detail: 'Horários de referência por frente de obra, gestão de pausas e filtros avançados.', tags: ['Assiduidade', 'Mobile'] },
+              { title: 'Automatização da atribuição de EPS às obras', tags: ['Obras', 'Automação'] },
+              { title: 'Evolução contínua da plataforma', detail: 'Novos estados e listagens na área de segurança, e melhorias em qualidade, obras, compras e gestão documental.', tags: ['SST', 'Qualidade'] },
+            ],
+          },
+          {
+            label: 'Agora',
+            items: [
+              { title: 'Aprovação e processamento de despesas', detail: 'Novo módulo financeiro com um circuito de aprovação de despesas, desde a submissão até à validação.', tags: ['Financeiro', 'Em curso'] },
+              { title: 'Aprovação de pagamentos', detail: 'Fluxo de aprovação e processamento de pagamentos, com acesso aos documentos de suporte guardados em AWS S3.', tags: ['Financeiro', 'AWS S3', 'Em curso'] },
             ],
           },
         ],
@@ -321,7 +318,7 @@ export const CONTENT: Record<Lang, Content> = {
       hint: 'shortcuts',
     },
     facts: [
-      { value: '2024', label: 'the year I joined Meivcore, where I build Meivworld' },
+      { value: '2025', label: 'the year I joined Meivcore to build the group’s internal platform' },
       { value: '14', label: 'business areas I’ve shipped features to' },
       { value: '€0', label: 'monthly running cost of the quoting app' },
       { value: '5 yrs', label: 'making carbon-fibre kayaks before code' },
@@ -405,9 +402,9 @@ export const CONTENT: Record<Lang, Content> = {
     career: {
       eyebrow: '02 · Career',
       title: 'Where my code goes to work.',
-      intro: 'At Meivcore I develop Meivworld, the group’s internal OutSystems platform, used every day across construction sites, health & safety, procurement and HR.',
+      intro: 'At Meivcore I develop the group’s internal OutSystems platform, used every day across construction sites, health & safety, procurement, finance and HR.',
       meiv: {
-        period: '2024 — now',
+        period: 'Feb 2025 — now',
         role: 'OutSystems Developer',
         org: 'Meivcore Group',
         place: 'Porto',
@@ -416,40 +413,37 @@ export const CONTENT: Record<Lang, Content> = {
         domains: meivDomains.en,
         phases: [
           {
-            label: '2024',
-            items: [
-              { title: 'Incident and H&S report improvements', tags: ['H&S'] },
-              { title: 'On-site feedback', detail: 'Capturing feedback directly from the construction site.', tags: ['Sites'] },
-            ],
-          },
-          {
             label: '2025 · H1',
             items: [
-              { title: 'Quality module: Occurrences', detail: 'Creation, detail, emails, history, gallery and people involved.', tags: ['Quality', 'New module'] },
-              { title: 'Tooling Vault', detail: 'New app to manage items in site containers, with Items and Employees and full sub-detail.', tags: ['Tooling', 'New app'] },
-              { title: 'Translating the platform to English', detail: 'Sites, Orders, Financial View, Budgets and Cost Centres.', tags: ['i18n'] },
-              { title: 'Cross-cutting improvements', detail: 'Procurement, Sites, HR, Fleet, PCI/Budgets, Cost Centres and Tooling.', tags: ['Procurement', 'HR', 'Fleet'] },
-              { title: 'User Manager, Financial View, Time & Reported Hours', tags: ['Time', 'Finance'] },
+              { title: 'New Quality Management module', detail: 'Full non-conformity lifecycle: logging, follow-up, change history, photo evidence, people involved and automatic email notifications.', tags: ['Quality', 'New module'] },
+              { title: 'On-site equipment management app', detail: 'New application to track inventory in site containers and the assignment of items to employees.', tags: ['Logistics', 'New app'] },
+              { title: 'Platform internationalisation', detail: 'English translation of operational and financial areas: sites, orders, budgeting, cost centres and the financial view.', tags: ['i18n', 'Finance'] },
+              { title: 'Evolving the core ERP modules', detail: 'Improvements across procurement, sites, HR, fleet, budgeting, cost centres, user management and time tracking.', tags: ['Procurement', 'HR', 'Sites'] },
+              { title: 'On-site safety and communication', detail: 'Improved incident reporting and H&S reports, plus a feedback channel straight from the site.', tags: ['H&S'] },
             ],
           },
           {
             label: '2025 · H2',
             items: [
-              { title: 'Safety Dialogues (DDS)', detail: 'New module within H&S.', tags: ['H&S', 'New module'] },
-              { title: 'Safety Walks', detail: 'Logging, detail, PDF, history and translation in MyMeivworld.', tags: ['H&S', 'PDF'] },
-              { title: 'Digital signature for employee documents', detail: 'New Document Management module.', tags: ['Documents', 'New module'] },
-              { title: 'Meivworld.ID: clock-in via app', detail: 'Work-front control, permissions and history.', tags: ['Time', 'Mobile'] },
-              { title: 'Scaffolding services', detail: '"Cancel" action and its knock-on effects.', tags: ['Scaffolding'] },
+              { title: 'Digitising Health & Safety', detail: 'New flows for safety dialogues and site inspections, with logging, history, PDF reports and access from the employee mobile app.', tags: ['H&S', 'Mobile', 'PDF'] },
+              { title: 'Digital document signing', detail: 'New document management module that lets employees sign documents digitally.', tags: ['Documents', 'New module'] },
+              { title: 'Mobile attendance tracking', detail: 'Clock-in from the phone, with control per work front, role-based permissions and history.', tags: ['Attendance', 'Mobile'] },
             ],
           },
           {
             label: '2026',
             items: [
-              { title: 'Procurement: Invoice Processing V3', detail: 'Revamp with double validation against purchase orders and UI improvements.', tags: ['Procurement', 'Revamp'] },
-              { title: 'Automatic PPE assignment on sites', tags: ['Sites', 'Automation'] },
-              { title: 'Meivworld.ID', detail: 'Reference schedule per work front, lunch break and filters.', tags: ['Time', 'Mobile'] },
-              { title: 'Safety Dialogues', detail: 'States and listings.', tags: ['H&S'] },
-              { title: 'Ongoing fixes and improvements', detail: 'Occurrences, Sites, Procurement and Document Management.', tags: ['Maintenance'] },
+              { title: 'Redesigned supplier invoice processing', detail: 'A new version of the workflow, with double validation against purchase orders and a redesigned interface.', tags: ['Procurement', 'Finance'] },
+              { title: 'Attendance tracking, next iteration', detail: 'Reference schedules per work front, break management and advanced filters.', tags: ['Attendance', 'Mobile'] },
+              { title: 'Automated EPS assignment to sites', tags: ['Sites', 'Automation'] },
+              { title: 'Continuous platform evolution', detail: 'New states and listings in the safety area, and improvements across quality, sites, procurement and document management.', tags: ['H&S', 'Quality'] },
+            ],
+          },
+          {
+            label: 'Now',
+            items: [
+              { title: 'Expense approval and processing', detail: 'New finance module with an expense approval workflow, from submission to validation.', tags: ['Finance', 'In progress'] },
+              { title: 'Payment approval', detail: 'Payment approval and processing workflow, with access to supporting documents stored in AWS S3.', tags: ['Finance', 'AWS S3', 'In progress'] },
             ],
           },
         ],
