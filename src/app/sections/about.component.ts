@@ -10,5 +10,4 @@ import { RevealDirective } from '../reveal.directive';
 })
 export class AboutComponent {
   readonly i18n = inject(LangService);
-  readonly facts = () => this.i18n.t().facts;
 }

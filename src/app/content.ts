@@ -46,7 +46,6 @@ export interface Content {
     local: string;
     hint: string;
   };
-  facts: { value: string; label: string }[];
   work: {
     eyebrow: string;
     title: string;
@@ -124,12 +123,6 @@ export const CONTENT: Record<Lang, Content> = {
       local: 'Porto, PT',
       hint: 'atalhos',
     },
-    facts: [
-      { value: '2025', label: 'o ano em que entrei na Meivcore, para desenvolver a plataforma interna do grupo' },
-      { value: '14', label: 'áreas de negócio onde já entreguei funcionalidades' },
-      { value: '0 €', label: 'de custo mensal da app de orçamentos' },
-      { value: '5 anos', label: 'a fabricar kayaks em fibra de carbono antes do código' },
-    ],
     work: {
       eyebrow: '01 · Trabalho',
       title: 'Projetos com clientes reais.',
@@ -317,12 +310,6 @@ export const CONTENT: Record<Lang, Content> = {
       local: 'Porto, PT',
       hint: 'shortcuts',
     },
-    facts: [
-      { value: '2025', label: 'the year I joined Meivcore to build the group’s internal platform' },
-      { value: '14', label: 'business areas I’ve shipped features to' },
-      { value: '€0', label: 'monthly running cost of the quoting app' },
-      { value: '5 yrs', label: 'making carbon-fibre kayaks before code' },
-    ],
     work: {
       eyebrow: '01 · Work',
       title: 'Projects with real clients.',

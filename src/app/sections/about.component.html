@@ -1,14 +1,3 @@
-<section class="facts" aria-label="Facts">
-  <div class="shell"><div class="facts__grid">
-    @for (f of facts(); track f.label; let i = $index) {
-      <div class="fact" reveal [revealDelay]="i * 90">
-        <span class="fact__value">{{ f.value }}</span>
-        <span class="fact__label">{{ f.label }}</span>
-      </div>
-    }
-  </div></div>
-</section>
-
 <section class="section about" id="about">
   <div class="shell about__grid">
     <figure class="about__photo" reveal>
