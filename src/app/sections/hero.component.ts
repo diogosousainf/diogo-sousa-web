@@ -1,9 +1,10 @@
-import { AfterViewInit, Component, ElementRef, NgZone, OnDestroy, ViewChild, inject } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, NgZone, OnDestroy, ViewChild, inject, ChangeDetectionStrategy } from '@angular/core';
 import { LangService } from '../lang.service';
 
 @Component({
   selector: 'app-hero',
   standalone: true,
+  changeDetection: ChangeDetectionStrategy.Eager,
   templateUrl: './hero.component.html',
 })
 export class HeroComponent implements AfterViewInit, OnDestroy {

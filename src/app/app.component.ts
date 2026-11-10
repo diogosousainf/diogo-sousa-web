@@ -1,4 +1,4 @@
-import { Component, HostListener, ViewChild, inject } from '@angular/core';
+import { Component, HostListener, ViewChild, inject, ChangeDetectionStrategy } from '@angular/core';
 import { LangService } from './lang.service';
 import { PaletteComponent } from './palette.component';
 import { HeroComponent } from './sections/hero.component';
@@ -11,10 +11,10 @@ const SECTIONS = ['work', 'career', 'about', 'contact'] as const;
 type SectionId = (typeof SECTIONS)[number];
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [PaletteComponent, HeroComponent, WorkComponent, CareerComponent, AboutComponent, ContactComponent],
-  templateUrl: './app.component.html',
+    selector: 'app-root',
+    imports: [PaletteComponent, HeroComponent, WorkComponent, CareerComponent, AboutComponent, ContactComponent],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    templateUrl: './app.component.html'
 })
 export class AppComponent {
   readonly i18n = inject(LangService);

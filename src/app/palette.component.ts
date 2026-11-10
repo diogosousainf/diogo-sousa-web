@@ -1,4 +1,4 @@
-import { Component, ElementRef, HostListener, ViewChild, computed, inject, signal } from '@angular/core';
+import { Component, ElementRef, HostListener, ViewChild, computed, inject, signal, ChangeDetectionStrategy } from '@angular/core';
 import { LangService } from './lang.service';
 import { CV, EMAIL, SOCIALS } from './content';
 import { copyText } from './clipboard';
@@ -13,6 +13,7 @@ interface Command {
 @Component({
   selector: 'app-palette',
   standalone: true,
+  changeDetection: ChangeDetectionStrategy.Eager,
   templateUrl: './palette.component.html',
 })
 export class PaletteComponent {

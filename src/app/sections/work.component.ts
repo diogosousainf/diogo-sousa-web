@@ -1,13 +1,13 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
 import { LangService } from '../lang.service';
 import { RevealDirective } from '../reveal.directive';
 import { STACK } from '../content';
 
 @Component({
-  selector: 'app-work',
-  standalone: true,
-  imports: [RevealDirective],
-  templateUrl: './work.component.html',
+    selector: 'app-work',
+    imports: [RevealDirective],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    templateUrl: './work.component.html'
 })
 export class WorkComponent {
   readonly i18n = inject(LangService);

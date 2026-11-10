@@ -1,14 +1,14 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
 import { LangService } from '../lang.service';
 import { RevealDirective } from '../reveal.directive';
 import { CV, EMAIL, SOCIALS, STUDIO_EMAIL } from '../content';
 import { copyText } from '../clipboard';
 
 @Component({
-  selector: 'app-contact',
-  standalone: true,
-  imports: [RevealDirective],
-  templateUrl: './contact.component.html',
+    selector: 'app-contact',
+    imports: [RevealDirective],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    templateUrl: './contact.component.html'
 })
 export class ContactComponent {
   readonly i18n = inject(LangService);

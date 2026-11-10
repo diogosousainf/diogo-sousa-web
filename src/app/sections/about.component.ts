@@ -1,12 +1,12 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
 import { LangService } from '../lang.service';
 import { RevealDirective } from '../reveal.directive';
 
 @Component({
-  selector: 'app-about',
-  standalone: true,
-  imports: [RevealDirective],
-  templateUrl: './about.component.html',
+    selector: 'app-about',
+    imports: [RevealDirective],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    templateUrl: './about.component.html'
 })
 export class AboutComponent {
   readonly i18n = inject(LangService);
